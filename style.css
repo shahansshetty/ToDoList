@@ -1,0 +1,33 @@
+body
+{
+   background-image: url("https://i.pinimg.com/736x/45/c0/86/45c08695ac7400476965367aababdd3b.jpg");
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+   background-attachment: fixed;
+   display:flex;
+   justify-content: center;
+   display:flex ;
+}
+.container
+{ background-color: rgb(255, 255, 255);
+   border:auto;
+   height: auto;
+   width: 40vh;
+   border-color:white;
+   border-style:solid;
+   border-radius: 5pt;
+   padding: 10px;
+   
+   
+ 
+   
+}
+#ui
+{
+    
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   padding:auto;
+}
