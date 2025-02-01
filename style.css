@@ -66,8 +66,28 @@ body
    cursor: pointer;
    color:black;
    /* color:rgba(36, 47, 205, 0.745); */
-   background-color: #fd77d7;;
+   background-color: #fd77d7;
  
+}
+
+#tobox
+{
+   border-radius:5px;
+   border-color: #fd77d7;
+   background-color: #141221;
+   color:white;
+}
+
+#tobox:hover
+{
+  
+   transition-duration: 0.3s;
+   cursor: pointer;
+   color:black;
+   /* color:rgba(36, 47, 205, 0.745); */
+   background-color: rgb(206, 218, 227);
+
+
 }
 
  
