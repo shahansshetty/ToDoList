@@ -44,14 +44,19 @@ body
 }
 .container li:hover
 {
+   
+   
    transition-duration: 0.3s;
    cursor: pointer;
    color:black;
    /* color:rgba(36, 47, 205, 0.745); */
    background-color: rgb(206, 218, 227);
+   
 
 
 }
+
+
  
 #add
 {
@@ -70,6 +75,29 @@ body
  
 }
 
+.delete
+{
+   margin-left: 81px;
+   padding:5px 10px;
+   border-radius: 4pt;
+   border-color: #fd77d7;
+   background-color: #141221;
+   color: white;
+}
+.delete:hover
+{
+   transition-duration: 0.3s;
+   cursor: pointer;
+   color:black;
+   /* color:rgba(36, 47, 205, 0.745); */
+   background-color: #fd77d7;
+ 
+}
+
+
+
+
+
 #tobox
 {
    border-radius:5px;
@@ -80,6 +108,7 @@ body
 
 #tobox:hover
 {
+   
   
    transition-duration: 0.3s;
    cursor: pointer;

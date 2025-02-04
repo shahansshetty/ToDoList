@@ -2,31 +2,48 @@ let addbutton = document.getElementById('add');
 let inputfeild = document.getElementById('tobox')    
 let outfield = document.getElementById('list-id')    
 
-addbutton.addEventListener('click',async function(){
+addbutton.addEventListener('click', function(){
    if(inputfeild.value=='')
    {
       inputfeild.value="demo";
    }
    else{
-   var para = document.createElement('li');
-   let del =document.createElement('button');
+      
+   const para = document.createElement('li');
+   const del =document.createElement('button');
+   del.textContent='delete';
+   del.className="delete";
+   
+   
     para.innerText=inputfeild.value;
-    
+    para.appendChild(del);
        outfield.appendChild(para);
        
-       
+       localStorage.setItem(inputfeild.value,inputfeild.value)
        inputfeild.value='';
-       para.addEventListener('click',async function(){
+   
+
+
+   
+       para.addEventListener('click', function(e){
          if(para.style.textDecoration=="line-through")
         para.style.textDecoration="none";
       else
       para.style.textDecoration="line-through";
+
+        
        })
 
-    
-       para.addEventListener('dblclick',async function(){
-        outfield.removeChild(para);
+
+
+    del.addEventListener('click', function()
+       {
+        localStorage.removeItem(para.innerText,para.innerText);
+         para.remove();
+         
        })
-      }
-       
+    }
 })
+
+
+
